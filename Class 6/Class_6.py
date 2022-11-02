@@ -84,8 +84,8 @@ print(count)
 # Example 1: BREAK
 for i in range(5):
     if i >= 3:
-        print(i)
         break
+    print(i)
 
 # Example 2: You have to guess the correct answer
 number = 5
