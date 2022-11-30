@@ -124,7 +124,7 @@ while True:
     
     answer = input("Do you want to keep playing? yes or no: ")
     
-    if answer == "no"
+    if answer == "no":
         print("Thanks for playing!")
         break
     else:
