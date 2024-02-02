@@ -1,0 +1,109 @@
+####    FIRST PART    ####
+
+# Recap of Class 1: 
+#       -print()
+#       -additions, substractions, and multiplications using Python
+#       -Strings, Integers, Floats, Booleans
+#       -Input
+#       -Conditionals
+
+
+
+####    SECOND PART    ####
+
+##     1) Introduction to Lists - Explain how to manipulate list and how it is useful     ##
+
+# Printing out a list.
+fruits = ["apple", "orange", "grape", "banana", "blueberry"]
+print(fruits)
+
+# Lists can contain different types of elements.
+fruits = ["apple", 10, 5.4]
+print(fruits)
+
+# You can retrieve a specific element of a List using the INDEX number.
+fruits = ["apple", "orange", "grape", "banana", "blueberry"]
+print(fruits[0])
+
+# A section of the list can be grabbed
+print(fruits[0:2])
+
+# Modifying an element in a list
+print(fruits[1])
+fruits[1] = "mandarine"
+print(fruits[1])
+print(fruits)
+
+# Adding an element to the end of the list
+fruits.append("watermelon")
+print(fruits)
+
+# A list can be empty. To add elements, we use append.
+fruits = []
+fruits.append("apple")
+print(fruits)
+
+# Adding an element at a specific position in the list
+fruits = ["apple", "orange", "grape", "banana", "blueberry"]
+fruits.insert(2, "watermelon")
+print(fruits)
+
+# Erasing an element in the list
+fruits.remove("apple")
+print(fruits)
+
+# Detecting wether an element is in the list or not using Boolean
+print("orange" in fruits)
+
+# Finding the length of the list
+print(len(fruits))
+
+
+## Exercise: Create a To-Do list for your day! ##
+todo = []
+
+task1 = input("What task would you like to complete today: ")
+todo.append(task1)
+
+task2 = input("What 2nd task would you like to complete today: ")
+todo.append(task2)
+
+task3 = input("What 3rd task would you like to complete today: ")
+todo.append(task3)
+
+print("\nHere is your To-Do list for the day:\n1) " + todo[0] + "\n2) " + todo[1] + "\n3) " + todo[2])
+
+# When you complete a task
+complete = input("\nWhat task have you completed (1,2, or 3): ")
+
+if complete == "1":
+    todo.remove(task1)
+elif complete == "2":
+    todo.remove(task2)
+elif complete == "3":
+    todo.remove(task3)
+
+print("\nHere are your remaining tasks for the day:\n1) " + todo[0] + "\n2) " + todo[1])
+
+
+
+
+###     HOMEWORK   |    List Puzzle!     ###
+
+# You must transform an Initial list into the Final list using the list manipulation methods you have learned in class!
+#
+#       Initial List: ["Nissan", "Toyota", "Mercedes", "Tesla", "Volvo", "Audi"]
+#
+#       Final List: ["Nissan", "Mercedes", "Porsche", "Dodge", "Tesla", "Audi", "Ferrari"]
+#
+#       RULES:
+#       1) You can only use the methods learned in class.
+#       2) It must be done in 5 manipulations.
+#       3) Print the new list.
+
+
+###     CODE     ###
+
+initial_list = ["Nissan", "Toyota", "Mercedes", "Tesla", "Volvo", "Audi"]
+
+# Write the list Manipulations below! #

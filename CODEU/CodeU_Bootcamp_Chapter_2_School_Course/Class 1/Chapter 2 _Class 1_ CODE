@@ -1,0 +1,51 @@
+####    FIRST PART    ####
+
+# Recap of last bootcamp theory: 
+#       -print()
+#       -additions, substractions, and multiplications using Python
+#       -Strings, Integers, Floats, Booleans
+#       -Input
+#       -Conditionals
+
+
+
+####    SECOND PART    ####
+
+#   In the second part of the class, we'll practice some exercises we previously did in the last chapter
+#   to refine our coding knowledge!
+
+
+## 1. INPUT Exercises! ##
+
+# Example 1: Welcome to the world of coding!
+name = input("What is your name?: ")
+print(name)
+print("Welcome "+ name + " to the world of coding!")
+
+# Example 2: Let's calculate something!
+x = input("First number: ")
+y = input("Second number: ")
+product = int(x)*int(y)
+print(product)
+
+##  2. CONDITIONAL Exercise!  ##
+
+# ONE Quiz #
+
+# Print your question!
+print('What company has built the first rocket to ever land back on Earth undamaged?')
+
+# Define a variable for the player’s answer
+answer = input('Your answer: ')
+
+# Conditional IF
+if answer == "spacex":
+     print("\nThat is the correct answer! You win!")
+
+# Conditional ELSE
+else:
+     print("\nYour answer is incorrect…You lose!")
+
+
+
+

@@ -1,0 +1,77 @@
+####    FIRST PART    ####
+
+# Recap of Class 3 theory: 
+#       Loops: While    
+
+###     HOMEWORK SOLUTION     ###
+
+gifts = []
+while len(gifts) <= 5:
+    new_gift = input("What gift would you like to add to your wish list: ")
+    gifts.append(new_gift) 
+
+print("Here is your final wish list: " + gifts)
+
+
+
+####    SECOND PART    ####
+
+
+##     1) First Exercise Of The Day - Guess The Number!      ##
+
+import random       #The 'random' module allows to generate values randomly.
+
+x = random.randrange(1,10)      # 'randrange' allows us to generate between a range of 2 values -> randrange(value1, value2)
+
+number = int(input("Choose a number between 1 and 10: "))
+
+while number != x:
+    print("\nSorry, you guessed incorrectly! Try again.")
+    number = int(input("Guess a number between 1 and 10: "))
+
+print("Congratulations! You guessed correctly!")
+
+
+
+##    2) Metaverse Guessing Contest!    ##
+import random
+
+
+tries = 3
+number = random.randrange(1,10)    
+    
+call = input("\nWrite 'call' to call the Radio Station: ")
+    
+if call == "call":
+    print("Thank you for calling Radio Metaverse! Welcome to the Metaverse contest!")
+        
+    while tries > 0:
+        guess = int(input("\nPlease enter your guess: "))
+        
+        if guess == number:
+            print("\nCongratulations!! You now have access to the METAVERSE :)")
+        
+        else:
+            print("Sorry, you guessed incorrectly!")
+            tries -= 1
+
+else:
+    print("Not a valid answer!")
+
+
+####    HOMEWORK: Defeat the Final Boss!    ####
+
+#   You must build a game where a user must face a final boss. In this dual, the player must guess the boss's number to attack!
+
+#   Here are the requirements:
+#   1) The final boss has a total of 5 lives (create a variable). This means the WHILE loop stops when his lives reach 0.
+#   2) The final boss's number is generated randomly between 1 and 10.
+#   3) After each user guess (done with input), the boss's number changes. 
+#       HINT: This means that the random.randrange has to be repeated after each guess.
+#   4) Your attack takes a life off of the boss.
+#   5) Print 'You have defeated the boss!' when you have defeated the boss.
+
+
+####    HOMEWORK CODE    ####
+
+

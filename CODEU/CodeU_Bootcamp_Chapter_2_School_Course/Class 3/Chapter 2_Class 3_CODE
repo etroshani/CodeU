@@ -1,0 +1,69 @@
+####    FIRST PART    ####
+
+# Recap of Class 2 theory: 
+#       -Lists
+#       -List Manipulations
+
+###     HOMEWORK SOLUTION     ###
+
+initial_list = ["Nissan", "Toyota", "Mercedes", "Tesla", "Volvo", "Audi"]
+
+# Possible manipulations
+initial_list.remove(initial_list[1])
+initial_list.insert(2, "Porsche")
+initial_list.insert(3, "Dodge")
+initial_list.remove(initial_list[5])
+initial_list.append("Ferrari")
+
+print(initial_list)
+
+
+
+####    SECOND PART    ####
+
+##     1) Introduction to Loops: WHILE     ##
+
+# Explain the functionality of LOOPS. How they work and when to use them.
+
+# Example 1 
+i = 0
+while i<5:
+    print(i)
+    i = i + 1
+
+# Example 2
+i = 10
+while i>1:
+    print("Hello World")
+    i = i - 1
+
+# Example 3 - Can we go to the movies?
+answer = input("Can we go to the movies? ")
+while answer == "no":
+    answer = input("Can we go to the movies? ")
+
+print("Yay, thank you!")
+
+
+##     2) Tiny Exercise - Let's build a list of numbers!      ##
+list = []
+number = 0
+while number != 10:
+    number = number + 1
+    list.append(number)
+
+print("This is the final list: " + list)
+
+
+####    HOMEWORK: Create your Wish List Maker!    ####
+
+#   You will build a Wish List Maker for anyone that would like to make a list of presents they would love to receive in the future!
+#   1) You must create an empty list where each gift will be added
+#   2) You will then define a variable using INPUT(). This is where the user is asked what present they would like to add to the list.
+#   3) The list can contain only 5 items.
+#   4) Create a WHILE Loop that ends once the list LENGTH is equal to 5. 
+#   5) Print() the completed list to the user
+
+
+
+####    HOMEWORK CODE    ####
